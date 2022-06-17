@@ -1,0 +1,27 @@
+{
+	"name": "watch-plus",
+	"version": "1.0.0",
+	"description": "",
+	"main": "main.js",
+	"scripts": {
+		"start": "node index.js",
+		"dev": "nodemon --ext js,html"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/eded1263/watch-plus.git"
+	},
+	"author": "",
+	"license": "ISC",
+	"bugs": {
+		"url": "https://github.com/eded1263/watch-plus/issues"
+	},
+	"homepage": "https://github.com/eded1263/watch-plus#readme",
+	"devDependencies": {
+		"nodemon": "^2.0.16"
+	},
+	"dependencies": {
+		"body-parser": "^1.20.0",
+		"express": "^4.18.1"
+	}
+}

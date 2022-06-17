@@ -1,0 +1,143 @@
+body{
+    margin: 0;
+    background: linear-gradient(#615AB2, #43C8C8);
+    height: 1800px;
+    width: auto;
+}
+
+.filser{
+    height: 750px;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.navbar{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100px;
+    background-color: #484686;
+    color: white;
+    font-family: Berlin Sans FB;
+    font-size: 25px;
+}
+
+.navbar>.logo{
+    width: auto;
+    height: 250px;
+}
+
+a{
+    color: white;
+}
+
+.conjunto{
+    padding-top: 50px;
+    display: flex;
+}
+
+.poster{
+    padding-left: 225px;
+    width: 400px;
+}
+
+.titulo{
+    font-family: Berlin Sans FB;
+    color: white;
+    padding-top: 25px;
+    padding-left: 25px;
+    font-size: 45px;
+}
+
+.texto{
+    font-family: Berlin Sans FB;
+    color: white;
+    padding-top: 175px;
+    font-size: 30px;
+    width: 250px;
+    padding-right: 300px;
+}
+
+.poster2{
+    padding-right: 225px;
+    width: 400px;
+}
+
+.titulo2{
+    font-family: Berlin Sans FB;
+    color: white;
+    padding-top: 25px;
+    padding-left: 150px;
+    font-size: 45px;
+}
+
+.texto2{
+    font-family: Berlin Sans FB;
+    color: white;
+    padding-top: 175px;
+    font-size: 30px;
+    width: 250px;
+    padding-left: 300px;
+}
+
+.agrupar{
+    padding-top: 50px;
+    padding-left: 450px;
+}
+
+
+.carousel {
+    box-shadow: 2px 2px 25px rgb(0,0,0,0.5);
+    overflow: hidden;
+    height: 500px;
+    width: 500px;
+}
+
+.image-container{
+    display: flex;
+    transform: translateX(0);
+    transition: transform 0.3s ease-in-out;
+}
+
+img {
+    /* visibility: hidden; */
+    object-fit: cover;
+    height: 500px;
+    width: 500px;
+}
+
+button{
+    padding-left: 150px;
+    background-color: #5e43c8;
+    font-style: oblique;
+    border-color: #5e43c8;
+    font-family:Berlin Sans FB;
+    color:white;
+}
+
+.basic{
+    padding-left: 150px;
+    width: 500px;
+    height: 500px;
+    background: linear-gradient(#7161CD, #00E0FF);
+    border-radius: 15%;
+}
+
+.top{
+    padding-left: 150px;
+    width: 500px;
+    height: 500px;
+    background: linear-gradient(#7161CD, #00E0FF);
+    border-radius: 15%;
+}
+
+.family{
+    padding-left: 150px;
+    width: 500px;
+    height: 500px;
+    background: linear-gradient(#7161CD, #00E0FF);
+    border-radius: 15%;
+}
