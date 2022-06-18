@@ -4,6 +4,7 @@
 <head>
 
     <link rel="stylesheet" href="public/css/style.css">
+    <link rel="stylesheet" href="public/css/formulario.css">
     <link rel="stylesheet" href="public/css/responsividade.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -51,9 +52,9 @@
         </div>
     </nav>
 
-    <section class="container d-flex flex-column flex-md-row mt-3">
+    <section class="container d-flex flex-column flex-md-row mt-3 pb-5">
         <form action="" class="d-flex flex-column flex-md-row form-cadastro">
-            <div class="planos pe-1">
+            <div class="planos">
                 <h2 class="text-center text-md-start titulo">Nossos planos:</h2>
                 <div class="form-check d-flex position-relative">
                     <input class="form-check-input ms-0 align-self-center" value="Basic" type="radio" name="plano"
@@ -69,9 +70,9 @@
                 </div>
 
                 <div class="form-check d-flex position-relative mt-3">
-                    <input class="form-check-input ms-0 align-self-center" value="Basic" type="radio" name="plano"
-                        id="radio-plano-basic">
-                    <label class="form-check-label card-plano ps-3" for="radio-plano-basic">
+                    <input class="form-check-input ms-0 align-self-center" value="Top" type="radio" name="plano"
+                        id="radio-plano-top">
+                    <label class="form-check-label card-plano ps-3" for="radio-plano-top">
                         <span class="nome-plano">Watch Top</span>
                         <ul class="lista mb-0">
                             <li>3x telas simultâneas</li>
@@ -82,9 +83,9 @@
                 </div>
 
                 <div class="form-check d-flex position-relative mt-3">
-                    <input class="form-check-input ms-0 align-self-center" value="Basic" type="radio" name="plano"
-                        id="radio-plano-basic">
-                    <label class="form-check-label card-plano ps-3" for="radio-plano-basic">
+                    <input class="form-check-input ms-0 align-self-center" value="Family" type="radio" name="plano"
+                        id="radio-plano-family">
+                    <label class="form-check-label card-plano ps-3" for="radio-plano-family">
                         <span class="nome-plano">Watch Family</span>
                         <ul class="lista mb-0">
                             <li>6x telas simultâneas</li>
@@ -94,7 +95,38 @@
                     </label>
                 </div>
             </div>
-            <div class="dados ps-1"></div>
+            <div class="dados ps-md-4  mt-3 mt-md-0 ">
+                <h2 class="text-center text-md-start titulo">Cadastro:</h2>
+                <div class="formulario">
+                    <div class="form-floating">
+                        <input type="text" class="form-control" id="input-nome" placeholder="nome" name="nome">
+                        <label for="input-nome">Nome</label>
+                    </div>
+                    <div class="form-floating mt-3">
+                        <input type="text" class="form-control" id="input-sobrenome" placeholder="Sobrenome"
+                            name="sobrenome">
+                        <label for="input-sobrenome">Sobrenome</label>
+                    </div>
+                    <div class="form-floating mt-3">
+                        <input type="email" class="form-control" id="input-email" placeholder="Email" name="email">
+                        <label for="input-email">Email</label>
+                    </div>
+                    <div class="form-floating mt-3">
+                        <input type="text" class="form-control" id="input-telefone" placeholder="Telefone"
+                            name="telefone">
+                        <label for="input-telefone">Telefone</label>
+                    </div>
+                    <div class="form-floating mt-3">
+                        <input type="text" class="form-control" id="input-cpf" placeholder="CPF" name="cpf">
+                        <label for="input-cpf">CPF</label>
+                    </div>
+                    <div class="botoes d-flex justify-content-center align-items-center mt-4">
+                        <button type="reset" class="btn cancelar me-5 text-center">Cancelar :(</button>
+                        <button type="submit" class="btn enviar text-center">Enviar :)</button>
+
+                    </div>
+                </div>
+            </div>
         </form>
     </section>
 </body>

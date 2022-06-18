@@ -1,0 +1,26 @@
+.formulario > .form-floating > label{
+  background: -webkit-linear-gradient(#615AB2, #43C8C8);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 20px;
+  opacity: 1 !important;
+}
+
+.formulario > .botoes{
+  width: 100%;
+}
+
+.formulario > .botoes > .btn{
+  width: 40%;
+  height: 50px;
+  border-radius: 25px;
+}
+.formulario > .botoes > .btn.cancelar{
+  background-color: #EEBDBD;
+  color: #CF5D5D;
+}
+.formulario > .botoes > .btn.enviar{
+  background-color: #02E0FF;
+  color: #048496;
+}
