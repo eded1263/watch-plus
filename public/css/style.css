@@ -13,21 +13,22 @@ html {
     scroll-behavior: smooth;
 }
 
-.navbar{
-    width: 100%;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    height: 100px;
+.navbar {
     background-color: #484686;
-    color: white;
-    font-family: Berlin Sans FB;
-    font-size: 25px;
 }
-
-.navbar>.logo{
-    width: auto;
-    height: 250px;
+.navbar-brand,
+.nav-link{
+    color: white !important;
+}
+.navbar-brand{
+    font-size: 28px !important;
+}
+.nav-link{
+   font-size: 22px !important; 
+}
+.logo{
+    max-width: 100px;
+    max-height: 75px;
 }
 
 a{
