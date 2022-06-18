@@ -9,10 +9,15 @@ class CadastroController {
 
 	initializeRoutes() {
 		this._router.get("/cadastre-se", this.serveCadastro);
+		this._router.post("/cadastre-se", this.sendCadastro);
 	}
 
 	serveCadastro(_req, res) {
 		res.sendFile(mountPath("controllers/Cadastro/view/cadastre-se.html"));
+	}
+
+	sendCadastro(req, res) {
+		res.json(req.body);
 	}
 
 	getRouter() {
