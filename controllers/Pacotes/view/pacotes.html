@@ -2,8 +2,13 @@
 <html>
 
 <head>
-    <meta charset="utf-8">
     <link rel="stylesheet" href="public/css/style.css">
+    <link rel="stylesheet" href="public/css/formulario.css">
+    <link rel="stylesheet" href="public/css/responsividade.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anek+Malayalam:wght@100&family=Bebas+Neue&display=swap"
+        rel="stylesheet">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <title> Watch+ </title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
@@ -11,6 +16,9 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
         crossorigin="anonymous"></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 
 <body>
@@ -43,28 +51,46 @@
             </div>
         </div>
     </nav>
-
-    <div class="basic">
-        <h1 class="titulo">watch basic</h1>
-        <div>
-            <p class="texto">Plano único, com todos os contéudos dispóniveis em HD, ideal para uma pessoa só!</p>
+    <section class="container mt-5 pb-5">
+        <div
+            class="d-flex flex-column flex-md-row align-items-center position-relative justify-content-center align-items-md-start custom-bg-gradient p-5 card-plano-descritivo">
+            <img src="public/imagens/watch-basic.jpeg" alt="Homem mexendo no celular com um café na mão"
+                class="poster imagem-planos">
+            <div class="ms-md-5 mt-3">
+                <h1 class="titulo text-center ">Watch Basic</h1>
+                <p class="texto mt-3 text-center "> Plano único, com todos os contéudos dispóniveis em HD, ideal para
+                    uma
+                    pessoa! Curta no trem, no caminho da facul, ou a noite com o mozão por um preço acessível! </p>
+            </div>
+            <span class="preco position-absolute">R$ 9,90</span>
         </div>
-    </div>
+        <div
+            class="mt-5 d-flex flex-column flex-md-row align-items-center position-relative justify-content-center align-items-md-start custom-bg-gradient p-5 card-plano-descritivo">
 
-    <div class="top">
-        <h1 class="titulo">watch top</h1>
-        <div>
-            <p class="texto">Plano com 3 telas simultâneas, com todos os contéudos dispóniveis em qualidade 4K!</p>
+            <div class="mt-3">
+                <h1 class="titulo text-center ">Watch Top</h1>
+                <p class="texto mt-3 text-center"> Plano com 3 telas simultâneas, com todos os contéudos dispóniveis em
+                    qualidade 4K! Ideal para dividir com seu grupo de amigos, assim todos terão acesso aos conteúdos da
+                    Watch+!</p>
+            </div>
+            <img src="public/imagens/watch-top.jpeg" alt="Conjunto de amigos bebendo em um sofá"
+                class="poster imagem-planos ms-md-5">
+            <span class="preco-left position-absolute">R$ 19,90</span>
         </div>
-    </div>
-
-    <div class="family">
-        <h1 class="titulo">watch family</h1>
-        <div>
-            <p class="texto">Plano com 6 telas simultâneas, com todos os contéudos dispóniveis em qualidade 8K, ideal
-                para sua família ou pra galera!</p>
+        <div
+            class="mt-5 d-flex flex-column flex-md-row align-items-center position-relative justify-content-center align-items-md-start custom-bg-gradient p-5 card-plano-descritivo">
+            <img src="public/imagens/watch-family.jpeg" alt="Poster imagem-planos do filme Bonequinha de Luxo"
+                class="poster imagem-planos">
+            <div class="ms-md-5 mt-3">
+                <h1 class="titulo text-center">Watch Family</h1>
+                <p class="texto mt-3 text-center">Plano com 6 telas simultâneas, com todos os contéudos dispóniveis em
+                    qualidade 8K, ideal
+                    para sua família ou pra galera! Se você tem muitos amigos ou uma família muito grande, esse é o seu
+                    match perfeito para o fim de tarde!</p>
+            </div>
+            <span class="preco position-absolute">R$ 29,90</span>
         </div>
-    </div>
+    </section>
 
 </body>
 

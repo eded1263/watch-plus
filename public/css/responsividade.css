@@ -4,4 +4,10 @@
   .form-cadastro > .planos {
     width: 100%;
   }
+
+  /* Filmes e Séries */
+
+  .btn-passar-foto {
+    display: none !important;
+  }
 }

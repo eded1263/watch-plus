@@ -6,10 +6,10 @@ const run = () => {
 	imgs = document.querySelectorAll(".image-container img");
 	const iteration = getIteration(idx);
 	imgs[getCurrentIndex(iteration)].style.transform = `translateX(${
-		iteration * 1500
+		iteration * 1050
 	}px)`;
 
-	container.style.transform = `translateX(${-idx * 500}px)`;
+	container.style.transform = `translateX(${-idx * 350}px)`;
 	idx++;
 };
 
@@ -24,7 +24,7 @@ const getCurrentIndex = (iteration) => {
 function next() {
 	clearInterval(interval);
 	run();
-	interval = setInterval(run, 800);
+	interval = setInterval(run, 1500);
 }
 function back() {
 	clearInterval(interval);
@@ -33,9 +33,9 @@ function back() {
 		idx = 2;
 	}
 	run();
-	interval = setInterval(run, 800);
+	interval = setInterval(run, 1500);
 }
 run();
-let interval = setInterval(run, 800);
+let interval = setInterval(run, 1500);
 document.getElementById("next").addEventListener("click", () => next());
 document.getElementById("back").addEventListener("click", () => back());
