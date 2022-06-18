@@ -1,0 +1,7 @@
+@media screen and (max-width: 500px){
+  /* tela de cadastro */
+  .form-cadastro > .dados,
+  .form-cadastro > .planos {
+    width: 100%;
+  }
+}

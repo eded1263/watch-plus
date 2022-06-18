@@ -1,9 +1,18 @@
+*{
+    box-sizing: border-box;
+    font-family: 'Bebas Neue', cursive;
+}
+
 body{
     margin: 0;
     background: linear-gradient(#615AB2, #43C8C8);
     /* Truque para a animação não causar overflow na página */
     overflow-x: hidden;
     min-height: 100vh;
+}
+
+.color-white {
+    color: white;
 }
 
 html {
@@ -35,7 +44,7 @@ a{
     max-width: 300px;
 }
 .titulo{
-    font-family: Berlin Sans FB;
+
     color: white;
 }
 .transition-left {
@@ -45,7 +54,7 @@ a{
     animation: to-left .5s;
 }
 .texto{
-    font-family: Berlin Sans FB;
+
     color: white;
     font-size: 25px;
     
@@ -75,7 +84,6 @@ button{
     background-color: #5e43c8;
     font-style: oblique;
     border-color: #5e43c8;
-    font-family:Berlin Sans FB;
     color:white;
 }
 
@@ -101,4 +109,52 @@ button{
     height: 500px;
     background: linear-gradient(#7161CD, #00E0FF);
     border-radius: 15%;
+}
+
+/* Form de cadastro */
+
+.form-cadastro  {
+    width: 100%;
+}
+
+.form-cadastro > .dados{
+
+    width: 55%;
+}
+.form-cadastro > .planos {
+    width: 45%;
+}
+
+.form-cadastro > .planos > .form-check {
+    width: 100%;
+    background-color: white;
+    display: flex;
+    padding: 10px 20px;
+    border-radius: 10px;
+    height: 120px;
+}
+.form-cadastro > .planos > .form-check >.form-check-label {
+    width: 100%;
+}
+
+.card-plano > .nome-plano {
+    font-size: 18px;
+    color: #615AB2;
+}
+.card-plano > .lista > li {
+    color: #615AB2;
+}
+.card-plano > .lista > li:nth-child(2n) {
+    color: #43C8C8;
+}
+
+.card-plano > .preco {
+    bottom: 5px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 20px;
+    background: -webkit-linear-gradient(#615AB2, #43C8C8);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
