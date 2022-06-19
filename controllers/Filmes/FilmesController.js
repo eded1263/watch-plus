@@ -8,10 +8,10 @@ class FilmesController {
 	}
 
 	initializeRoutes() {
-		this._router.get("/filmes-e-series", this.servePacotes);
+		this._router.get("/filmes-e-series", this.serveFilmesESeries);
 	}
 
-	servePacotes(_req, res) {
+	serveFilmesESeries(_req, res) {
 		res.sendFile(mountPath("controllers/Filmes/view/filmes-e-series.html"));
 	}
 
