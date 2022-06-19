@@ -1,7 +1,7 @@
 require("dotenv").config({ path: __dirname + "/.env" });
 const app = require("express")();
 const { HomeController } = require("./controllers/Home/HomeController");
-const { GoogleController } = require("./controllers/Google/GoogleController");
+const { SeoController } = require("./controllers/Seo/SeoController");
 const { FilmesController } = require("./controllers/Filmes/FilmesController");
 const {
 	PacotesController,
@@ -16,7 +16,7 @@ const appController = new AppController(app, [
 	new CadastroController(),
 	new PacotesController(),
 	new FilmesController(),
-	new GoogleController(),
+	new SeoController(),
 ]);
 
 appController.startServer(process.env.PORT);

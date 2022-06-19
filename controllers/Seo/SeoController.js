@@ -1,6 +1,6 @@
 const { Router } = require("express");
 const mountPath = require("../../utils/mountPath");
-class GoogleController {
+class SeoController {
 	_router = new Router();
 
 	constructor() {
@@ -8,13 +8,11 @@ class GoogleController {
 	}
 
 	initializeRoutes() {
-		this._router.get("/google81d983010e99828d.html", this.serveGoogleFile);
+		this._router.get("/sitemap.xml", this.serveSiteMap);
 	}
 
-	serveGoogleFile(_req, res) {
-		res.sendFile(
-			mountPath("controllers/Google/view/google81d983010e99828d.html")
-		);
+	serveSiteMap(_req, res) {
+		res.sendFile(mountPath("controllers/Seo/view/sitemap.xml"));
 	}
 
 	getRouter() {
@@ -23,5 +21,5 @@ class GoogleController {
 }
 
 module.exports = {
-	GoogleController,
+	SeoController,
 };
