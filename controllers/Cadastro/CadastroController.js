@@ -17,6 +17,7 @@ class CadastroController {
 	}
 
 	sendCadastro(req, res) {
+		// TODO: Enviar email
 		res.json(req.body);
 	}
 
