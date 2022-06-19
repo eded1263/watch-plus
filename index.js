@@ -17,4 +17,4 @@ const appController = new AppController(app, [
 	new FilmesController(),
 ]);
 
-appController.startServer(process.env.HTTP_PORT);
+appController.startServer(process.env.PORT);
