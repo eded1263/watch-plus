@@ -21,9 +21,9 @@ class AppController {
 		});
 	}
 
-	startServer() {
-		this.app.listen(3000, () => {
-			console.log("Listening on 3000");
+	startServer(port) {
+		this.app.listen(port, () => {
+			console.log(`Listening on ${port}`);
 		});
 	}
 

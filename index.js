@@ -1,3 +1,4 @@
+require("dotenv").config({ path: __dirname + "/.env" });
 const app = require("express")();
 const { HomeController } = require("./controllers/Home/HomeController");
 const { FilmesController } = require("./controllers/Filmes/FilmesController");
@@ -16,4 +17,4 @@ const appController = new AppController(app, [
 	new FilmesController(),
 ]);
 
-appController.startServer();
+appController.startServer(process.env.HTTP_PORT);
