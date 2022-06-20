@@ -7,3 +7,6 @@
 - Subir em modo desenvolvimento: ```npm run dev```
 - Subir em modo de produção: ```npm run start```
 - Não esquecer de alterar os valores de ambiente no arquivo .env
+
+### URL para acesso:
+- https://watch-plus-filmes.herokuapp.com/

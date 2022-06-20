@@ -1,0 +1,3 @@
+User-agent: *
+Disallow: 
+Sitemap: https://watch-plus-filmes.herokuapp.com/sitemap.xml
