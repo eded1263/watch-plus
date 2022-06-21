@@ -20,8 +20,8 @@ class CadastroController {
 	async sendCadastro(req, res) {
 		const mailOptions = {
 			from: req.body.email,
-			to: "aula.teste.edilson@gmail.com",
-			subject: "Submissão de Formulário",
+			to: process.env.NODEMAILER_MAIL,
+			subject: "Submissão de Formulário - Watch Plus",
 			html: `
 				<p>Nome: ${req.body.nome} ${req.body.sobrenome} </p>
 				<p>Email: ${req.body.email} </p>
