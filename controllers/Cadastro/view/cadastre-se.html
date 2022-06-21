@@ -64,7 +64,7 @@
                 <h2 class="text-center text-md-start titulo">Nossos planos:</h2>
                 <div class="form-check d-flex position-relative">
                     <input class="form-check-input ms-0 align-self-center" value="Basic" type="radio" name="plano"
-                        id="radio-plano-basic">
+                        id="radio-plano-basic" required>
                     <label class="form-check-label card-plano ps-3" for="radio-plano-basic">
                         <span class="nome-plano">Watch Basic</span>
                         <ul class="lista mb-0">
@@ -105,25 +105,26 @@
                 <h2 class="text-center text-md-start titulo">Cadastro:</h2>
                 <div class="formulario">
                     <div class="form-floating">
-                        <input type="text" class="form-control" id="input-nome" placeholder="nome" name="nome">
+                        <input type="text" class="form-control" id="input-nome" placeholder="nome" name="nome" required>
                         <label for="input-nome">Nome</label>
                     </div>
                     <div class="form-floating mt-3">
                         <input type="text" class="form-control" id="input-sobrenome" placeholder="Sobrenome"
-                            name="sobrenome">
+                            name="sobrenome" required>
                         <label for="input-sobrenome">Sobrenome</label>
                     </div>
                     <div class="form-floating mt-3">
-                        <input type="email" class="form-control" id="input-email" placeholder="Email" name="email">
+                        <input type="email" class="form-control" id="input-email" placeholder="Email" name="email"
+                            required>
                         <label for="input-email">Email</label>
                     </div>
                     <div class="form-floating mt-3">
                         <input type="text" class="form-control" id="input-telefone" placeholder="Telefone"
-                            name="telefone">
+                            name="telefone" required>
                         <label for="input-telefone">DDD + Telefone</label>
                     </div>
                     <div class="form-floating mt-3">
-                        <input type="text" class="form-control" id="input-cpf" placeholder="CPF" name="cpf">
+                        <input type="text" class="form-control" id="input-cpf" placeholder="CPF" name="cpf" required>
                         <label for="input-cpf">CPF</label>
                     </div>
                     <div class="botoes d-flex justify-content-center align-items-center mt-4">
@@ -135,9 +136,14 @@
             </div>
         </form>
     </section>
-    <script src="public/submit.js"></script>
+    <script src="public/submit.js" defer></script>
     <script src="public/validaCpf.js"></script>
     <script src="public/formataTelefone.js"></script>
+    <div class="justify-content-center align-items-center loading" id="loader-wrapper">
+        <div class="spinner-border text-info" role="status">
+            <span class="visually-hidden">Carregando...</span>
+        </div>
+    </div>
 </body>
 
 </html>

@@ -1,5 +1,6 @@
 const { Router } = require("express");
 const mountPath = require("../../utils/mountPath");
+const transporter = require("../../config/mail");
 class CadastroController {
 	_router = new Router();
 
@@ -16,8 +17,20 @@ class CadastroController {
 		res.sendFile(mountPath("controllers/Cadastro/view/cadastre-se.html"));
 	}
 
-	sendCadastro(req, res) {
-		// TODO: Enviar email
+	async sendCadastro(req, res) {
+		const mailOptions = {
+			from: req.body.email,
+			to: "aula.teste.edilson@gmail.com",
+			subject: "Submissão de Formulário",
+			html: `
+				<p>Nome: ${req.body.nome} ${req.body.sobrenome} </p>
+				<p>Email: ${req.body.email} </p>
+				<p>Telefone: ${req.body.telefone} </p>
+				<p>CPF: ${req.body.cpf} </p>
+				<p>Plano: ${req.body.plano} </p>
+			`,
+		};
+		await transporter.sendMail(mailOptions);
 		res.json(req.body);
 	}
 

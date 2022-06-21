@@ -197,3 +197,20 @@ a{
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
+
+.loading {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height:100vh;
+    opacity: 0;
+    transition: all ease-in .3s;
+    display: flex;
+    visibility: hidden;
+    background-color: #ffffffaa;
+}
+.loading-visivel {
+    opacity: 1;
+    visibility: visible;
+}

@@ -1,7 +1,10 @@
 const form = document.getElementById("form-cadastro");
+const loader = document.getElementById("loader-wrapper");
 
 function submitForm(event) {
 	event.preventDefault();
+	console.log(loader);
+	loader.classList.add("loading-visivel");
 	const data = new URLSearchParams();
 	for (const pair of new FormData(form)) {
 		data.append(pair[0], pair[1]);
@@ -13,6 +16,7 @@ function submitForm(event) {
 		});
 	} catch (error) {
 		alert("Erro no envio, notifique o erro ao administrador");
+		loader.classList.remove("loading-visivel");
 	}
 }
 
